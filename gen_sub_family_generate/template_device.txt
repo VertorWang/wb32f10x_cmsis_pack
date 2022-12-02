@@ -1,0 +1,6 @@
+  <!-- *************************  Device '{{ device_name }}'  ***************************** -->
+  <device Dname="{{ device_name }}">
+    <memory     name="IROM1"  access="rx"       start="0x08000000"  size={{ device_flash_size }}    startup="1"   default="1"/>
+    <memory     name="IRAM1"  access="rw"       start="0x20000000"  size={{ device_sram_size }}     init   ="0"   default="1"/>
+    <algorithm  name="Flash/{{ device_flm_name }}" start="0x08000000" size={{ device_flash_size }} default="1"/>
+  </device>

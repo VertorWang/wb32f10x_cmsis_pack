@@ -1,0 +1,6 @@
+
+<!-- ************************  Sub-family '{{ sub_family_name }}'  **************************** -->
+<subFamily DsubFamily="{{ sub_family_name }}">
+  <processor  Dclock="{{ sub_family_freq }}"/>
+{{ sub_family_devices }}
+</subFamily>
