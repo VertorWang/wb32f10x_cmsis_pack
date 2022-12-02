@@ -7,6 +7,16 @@ from periph.wb_sys import sys_define
 from periph.wb_rcc import rcc_define
 from periph.wb_exti import exti_define
 from periph.wb_anctl import anctl_define
+from periph.wb_adc import adc_define
+from periph.wb_tim import tim1_define, tim2_define, tim3_define, tim4_define
+from periph.wb_led import led_define
+from periph.wb_rtc import rtc_define
+from periph.wb_dmac import dmac1_define, dmac2_define
+from periph.wb_wwdg import wwdg_define
+from periph.wb_iwdg import iwdg_define
+from periph.wb_dbgmcu import dbgmcu_define
+from periph.wb_sfm import sfm_define
+from periph.wb_cache import cache_define
 
 dataSvd = {
     "name": "WB32F10x",
@@ -58,5 +68,30 @@ dataSvd = {
         "peripheral_11": exti_define,
 
         "peripheral_12": anctl_define,
+
+        "peripheral_13": adc_define,
+
+        "peripheral_14": tim1_define,
+        "peripheral_15": tim2_define,
+        "peripheral_16": tim3_define,
+        "peripheral_17": tim4_define,
+
+        "peripheral_18": led_define,
+
+        "peripheral_19": rtc_define,
+
+        "peripheral_20": dmac1_define,
+        "peripheral_21": dmac2_define,
+
+        "peripheral_22": wwdg_define,
+
+        "peripheral_23": iwdg_define,
+
+        "peripheral_24": dbgmcu_define,
+
+        "peripheral_25": sfm_define,
+
+        "peripheral_26": cache_define,
+
     },
 }

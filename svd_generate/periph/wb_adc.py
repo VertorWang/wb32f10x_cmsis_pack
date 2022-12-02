@@ -279,202 +279,198 @@ ADC_CR2 = {
     "resetMask": "0xFFFFFFFF",
     "fields": {
         "field_0": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "ADON",
+            "description": "A/D on-off controller",
+            "bitRange":"[0:0]",
         },
 
         "field_1": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "CONT",
+            "description": "Continuous conversion",
+            "bitRange":"[1:1]",
         },
 
         "field_2": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "CAL",
+            "description": "A/D calibration",
+            "bitRange":"[2:2]",
         },
 
         "field_3": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "RSTCAL",
+            "description": "Reset calibration",
+            "bitRange":"[3:3]",
         },
 
         "field_4": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "RESERVED",
+            "description": "RESERVED",
+            "bitRange":"[7:4]",
         },
 
         "field_5": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "DMAEN",
+            "description": "Regular channel DMA enable",
+            "bitRange":"[8:8]",
         },
 
         "field_6": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "JDMAEN",
+            "description": "Injected channel DMA enable",
+            "bitRange":"[9:9]",
         },
 
         "field_7": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "RESERVED",
+            "description": "RESERVED",
+            "bitRange":"[10:10]",
         },
 
         "field_8": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "ALGN",
+            "description": "Data alignment",
+            "bitRange":"[11:11]",
         },
 
         "field_9": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "JEXSEL",
+            "description": "External event select for injected group",
+            "bitRange":"[14:12]",
+            "enumeratedValues": {
+                "name": "Trigger_Select",
+                "enumeratedValue_0": {
+                    "name": "TIM1_TRGO",
+                    "description": "Timer1 trigger output event",
+                    "value": "0",
+                },
+                "enumeratedValue_1": {
+                    "name": "TIM1_CC4",
+                    "description": "Timer1 channel_4 capture/compare event",
+                    "value": "1",
+                },
+                "enumeratedValue_2": {
+                    "name": "TIM2_TRGO",
+                    "description": "Timer2 trigger output event",
+                    "value": "2",
+                },
+                "enumeratedValue_3": {
+                    "name": "TIM2_CC1",
+                    "description": "Timer2 channel_1 capture/compare event",
+                    "value": "3",
+                },
+                "enumeratedValue_4": {
+                    "name": "TIM3_CC4",
+                    "description": "Timer3 channel_4 capture/compare event",
+                    "value": "4",
+                },
+                "enumeratedValue_5": {
+                    "name": "TIM4_TRGO",
+                    "description": "Timer4 trigger output event",
+                    "value": "5",
+                },
+                "enumeratedValue_6": {
+                    "name": "EXTI15",
+                    "description": "External line 15 event",
+                    "value": "6",
+                },
+                "enumeratedValue_7": {
+                    "name": "JSWSTART",
+                    "description": "Software start event for injected channels",
+                    "value": "7",
+                }
+            }
         },
 
         "field_10": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "JEXTTRIG",
+            "description": "External trigger conversion mode for injected channels",
+            "bitRange":"[15:15]",
         },
 
         "field_11": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "RESERVED",
+            "description": "RESERVED",
+            "bitRange":"[16:16]",
         },
 
         "field_12": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "EXTISEL",
+            "description": "External event select for regular group",
+            "bitRange":"[19:17]",
+            "enumeratedValues": {
+                "name": "Trigger_Select",
+                "enumeratedValue_0": {
+                    "name": "TIM1_CC1",
+                    "description": "Timer1 channel_1 capture/compare event",
+                    "value": "0",
+                },
+                "enumeratedValue_1": {
+                    "name": "TIM1_CC2",
+                    "description": "Timer1 channel_2 capture/compare event",
+                    "value": "1",
+                },
+                "enumeratedValue_2": {
+                    "name": "TIM1_CC3",
+                    "description": "Timer1 channel_3 capture/compare event",
+                    "value": "2",
+                },
+                "enumeratedValue_3": {
+                    "name": "TIM2_CC2",
+                    "description": "Timer2 channel_2 capture/compare event",
+                    "value": "3",
+                },
+                "enumeratedValue_4": {
+                    "name": "TIM3_TRGO",
+                    "description": "Timer1 trigger output event",
+                    "value": "4",
+                },
+                "enumeratedValue_5": {
+                    "name": "TIM4_CC4",
+                    "description": "Timer4 channel_4 capture/compare event",
+                    "value": "5",
+                },
+                "enumeratedValue_6": {
+                    "name": "EXTI11",
+                    "description": "External line 11 event",
+                    "value": "6",
+                },
+                "enumeratedValue_7": {
+                    "name": "SWSTART",
+                    "description": "Software start event for regular channels",
+                    "value": "7",
+                }
+            }
         },
 
         "field_13": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "EXTTRIG",
+            "description": "External trigger conversion mode for regular channels",
+            "bitRange": "[20:20]",
         },
 
         "field_14": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_14": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "JSWSTART",
+            "description": "Start conversion of injected channels",
+            "bitRange":"[21:21]",
         },
 
         "field_15": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "SWSTART",
+            "description": "Start conversion of regular channels",
+            "bitRange":"[22:22]",
         },
 
         "field_16": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
+            "name": "TSVREFE",
+            "description": "Temperature sensor and VREFINT enable",
+            "bitRange":"[23:23]",
         },
 
         "field_17": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_18": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_19": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_20": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_21": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_22": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_23": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_24": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_25": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_26": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_27": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_28": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_29": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_30": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
-
-        "field_31": {
-            "name": "",
-            "description": "",
-            "bitRange":"[:]",
-        },
+            "name": "RESERVED",
+            "description": "RESERVED",
+            "bitRange":"[31:24]",
+        }
     }
 }
 
@@ -711,7 +707,7 @@ ADC_JDMAR = {
 }
 
 
-anctl_define = {
+adc_define = {
     "name": "ADC",
     "description": "Analog to digital conversion",
     "groupName": "ADC",
