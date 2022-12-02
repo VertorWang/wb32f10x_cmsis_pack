@@ -56,4 +56,7 @@ target/
 # PyCharm
 **/__pycache__
 **.idea
+
+# 生成内容
 **/WestBerry.WB32F10x_DFP/SVD
+**.pack

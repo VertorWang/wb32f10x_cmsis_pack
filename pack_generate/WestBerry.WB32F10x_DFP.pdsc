@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>WestBerry</vendor>
+  <name>WB32F10x_DFP</name>
+  <description>WB32F10x ARM Cortex-M3 Device Family Pack</description>
+  <url>http://www.westberrytech.com/</url>
+  <supportContact>fae@westberrytech.com</supportContact>
+  <!-- optional license file -->
+  <!-- 
+  <license>
+  </license>
+  -->
+  
+  <releases>
+    <release version="1.0.0">
+      Initial Version
+    </release>
+  </releases>
+
+  <keywords>
+    <!-- keywords for indexing -->
+    <keyword>WestBerry</keyword>
+    <keyword>WB32F10x</keyword>
+  </keywords>
+
+  <devices>
+    <family Dfamily="WB32F10x Series" Dvendor="WestBerry:666">
+      <processor Dcore="Cortex-M3" DcoreVersion="r2p0" Dfpu="0" Dmpu="1" Dendian="Little-endian"/>
+      <description>
+        The WB32F10x device family contains an ARM Cortex-M3 processor, running up to 96 MHz with a versatile set of on-chip peripherals.
+      </description>
+      <compile    header="Device/Include/WB32F10x.h"/>
+      <debug      svd="SVD/WB32F10x.svd"/>
+      <!-- ************************  Sub-family 'WB32F101'  **************************** -->
+      <subFamily DsubFamily="WB32F101">
+        <processor  Dclock="32000000"/>
+        <!-- *************************  Device 'WB32F101K6'  ***************************** -->
+        <device Dname="WB32F101K6">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x8000"     startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x3000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_32.FLM" start="0x08000000" size="0x8000"  default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F101T6'  ***************************** -->
+        <device Dname="WB32F101T6">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x8000"     startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x3000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_32.FLM" start="0x08000000" size="0x8000"  default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F101C6'  ***************************** -->
+        <device Dname="WB32F101C6">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x8000"     startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x3000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_32.FLM" start="0x08000000" size="0x8000"  default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F101R6'  ***************************** -->
+        <device Dname="WB32F101R6">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x8000"     startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x3000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_32.FLM" start="0x08000000" size="0x8000"  default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F101K8'  ***************************** -->
+        <device Dname="WB32F101K8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F101T8'  ***************************** -->
+        <device Dname="WB32F101T8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F101C8'  ***************************** -->
+        <device Dname="WB32F101C8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F101R8'  ***************************** -->
+        <device Dname="WB32F101R8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+      </subFamily>
+      <!-- ************************  Sub-family 'WB32F102'  **************************** -->
+      <subFamily DsubFamily="WB32F102">
+        <processor  Dclock="48000000"/>
+        <!-- *************************  Device 'WB32F102K6'  ***************************** -->
+        <device Dname="WB32F102K6">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x8000"     startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x3000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_32.FLM" start="0x08000000" size="0x8000"  default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F102T6'  ***************************** -->
+        <device Dname="WB32F102T6">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x8000"     startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x3000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_32.FLM" start="0x08000000" size="0x8000"  default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F102C6'  ***************************** -->
+        <device Dname="WB32F102C6">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x8000"     startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x3000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_32.FLM" start="0x08000000" size="0x8000"  default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F102R6'  ***************************** -->
+        <device Dname="WB32F102R6">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x8000"     startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x3000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_32.FLM" start="0x08000000" size="0x8000"  default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F102K8'  ***************************** -->
+        <device Dname="WB32F102K8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F102T8'  ***************************** -->
+        <device Dname="WB32F102T8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F102C8'  ***************************** -->
+        <device Dname="WB32F102C8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F102R8'  ***************************** -->
+        <device Dname="WB32F102R8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+      </subFamily>
+      <!-- ************************  Sub-family 'WB32F103'  **************************** -->
+      <subFamily DsubFamily="WB32F103">
+        <processor  Dclock="72000000"/>
+        <!-- *************************  Device 'WB32F103K8'  ***************************** -->
+        <device Dname="WB32F103K8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103T8'  ***************************** -->
+        <device Dname="WB32F103T8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103T9'  ***************************** -->
+        <device Dname="WB32F103T9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103TB'  ***************************** -->
+        <device Dname="WB32F103TB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103C8'  ***************************** -->
+        <device Dname="WB32F103C8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103C9'  ***************************** -->
+        <device Dname="WB32F103C9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103CB'  ***************************** -->
+        <device Dname="WB32F103CB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103R8'  ***************************** -->
+        <device Dname="WB32F103R8">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x10000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x5000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_64.FLM" start="0x08000000" size="0x10000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103R9'  ***************************** -->
+        <device Dname="WB32F103R9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F103RB'  ***************************** -->
+        <device Dname="WB32F103RB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+      </subFamily>
+      <!-- ************************  Sub-family 'WB32F104'  **************************** -->
+      <subFamily DsubFamily="WB32F104">
+        <processor  Dclock="96000000"/>
+        <!-- *************************  Device 'WB32F104T9'  ***************************** -->
+        <device Dname="WB32F104T9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104TB'  ***************************** -->
+        <device Dname="WB32F104TB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104TA'  ***************************** -->
+        <device Dname="WB32F104TA">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x30000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_192.FLM" start="0x08000000" size="0x30000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104TC'  ***************************** -->
+        <device Dname="WB32F104TC">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x40000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_256.FLM" start="0x08000000" size="0x40000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104C9'  ***************************** -->
+        <device Dname="WB32F104C9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104CB'  ***************************** -->
+        <device Dname="WB32F104CB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104CA'  ***************************** -->
+        <device Dname="WB32F104CA">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x30000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_192.FLM" start="0x08000000" size="0x30000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104CC'  ***************************** -->
+        <device Dname="WB32F104CC">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x40000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_256.FLM" start="0x08000000" size="0x40000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104R9'  ***************************** -->
+        <device Dname="WB32F104R9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104RB'  ***************************** -->
+        <device Dname="WB32F104RB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104RA'  ***************************** -->
+        <device Dname="WB32F104RA">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x30000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_192.FLM" start="0x08000000" size="0x30000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F104RC'  ***************************** -->
+        <device Dname="WB32F104RC">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x40000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_256.FLM" start="0x08000000" size="0x40000" default="1"/>
+        </device>
+      </subFamily>
+      <!-- ************************  Sub-family 'WB32F105'  **************************** -->
+      <subFamily DsubFamily="WB32F105">
+        <processor  Dclock="128000000"/>
+        <!-- *************************  Device 'WB32F105T9'  ***************************** -->
+        <device Dname="WB32F105T9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105TB'  ***************************** -->
+        <device Dname="WB32F105TB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105TA'  ***************************** -->
+        <device Dname="WB32F105TA">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x30000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_192.FLM" start="0x08000000" size="0x30000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105TC'  ***************************** -->
+        <device Dname="WB32F105TC">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x40000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_256.FLM" start="0x08000000" size="0x40000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105C9'  ***************************** -->
+        <device Dname="WB32F105C9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105CB'  ***************************** -->
+        <device Dname="WB32F105CB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105CA'  ***************************** -->
+        <device Dname="WB32F105CA">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x30000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_192.FLM" start="0x08000000" size="0x30000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105CC'  ***************************** -->
+        <device Dname="WB32F105CC">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x40000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_256.FLM" start="0x08000000" size="0x40000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105R9'  ***************************** -->
+        <device Dname="WB32F105R9">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x18000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_96.FLM" start="0x08000000" size="0x18000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105RB'  ***************************** -->
+        <device Dname="WB32F105RB">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x20000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x7000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105RA'  ***************************** -->
+        <device Dname="WB32F105RA">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x30000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_192.FLM" start="0x08000000" size="0x30000" default="1"/>
+        </device>
+        <!-- *************************  Device 'WB32F105RC'  ***************************** -->
+        <device Dname="WB32F105RC">
+          <memory     name="IROM1"  access="rx"       start="0x08000000"  size="0x40000"    startup="1"   default="1"/>
+          <memory     name="IRAM1"  access="rw"       start="0x20000000"  size="0x9000"     init   ="0"   default="1"/>
+          <algorithm  name="Flash/WB32F10x_256.FLM" start="0x08000000" size="0x40000" default="1"/>
+        </device>
+      </subFamily>
+    </family>
+  </devices>
+
+
+  <!-- examples section (optional for all Software Packs)-->
+  <!--
+  <examples>
+  </examples>
+  -->
+  
+  <conditions>
+    <condition id="WB32F10x CMSIS-CORE">
+      <!-- conditions selecting Devices -->
+      <description>WestBerry WB32F10x Series devices and CMSIS-CORE</description>
+      <require Cclass="CMSIS" Cgroup="CORE"/>
+      <require Dvendor="WestBerry:6666" Dname="WB32F10*"/>
+    </condition>
+    <condition id="Startup ARM">
+      <description>Startup assembler file for ARMCC</description>
+      <require Tcompiler="ARMCC"/>
+    </condition>
+    <condition id="Startup GCC">
+      <description>Startup assembler file for GCC</description>
+      <require Tcompiler="GCC"/>
+    </condition>
+    <condition id="Startup IAR">
+      <description>Startup assembler file for IAR</description>
+      <require Tcompiler="IAR"/>
+    </condition>
+  </conditions>
+
+
+  <components>
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="WB32F10x CMSIS-CORE">
+      <description>System Startup for WestBerry WB32F10x Series</description>
+      <files>
+        <!--  include folder -->
+        <file category="include" name="Device/Include/"/>
+        <file category="source"  name="Device/Source/ARM/startup_wb32f10x.s" attr="config" condition="Startup ARM" version="1.0.0"/>
+        <file category="source"  name="Device/Source/GCC/startup_wb32f10x.S" attr="config" condition="Startup GCC" version="1.0.0"/>
+        <file category="source"  name="Device/Source/IAR/startup_wb32f10x.s" attr="config" condition="Startup IAR" version="1.0.0"/>
+        <file category="source"  name="Device/Source/system_wb32f10x.c"  attr="config" version="1.0.0"/>
+      </files>
+    </component>
+  </components>
+
+</package>
