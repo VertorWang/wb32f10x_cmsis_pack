@@ -58,5 +58,8 @@ target/
 **.idea
 
 # 生成内容
-**/WestBerry.WB32F10x_DFP/SVD
-**.pack
+svd_generate/WestBerry.WB32F10x_DFP/SVD/*.svd
+svd_generate/WestBerry.WB32F10x_DFP/SVD/*.h
+**/svd_generate/**/*.svd
+SVDCheck.log
+*.pack
