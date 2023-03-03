@@ -29,5 +29,5 @@ Set-Location .\WestBerry.WB32F10x_DFP\
 
 # 回到根目录
 Set-Location ..\
-# 拷贝pack到根目录
-cp .\WestBerry.WB32F10x_DFP\*.pack .\
+# 移动pack到根目录
+mv .\WestBerry.WB32F10x_DFP\*.pack .\
