@@ -8,5 +8,5 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - name: Perform a Pester test from the command-line
         shell: pwsh
-        run: .\powershell_test.ps1
+        run: powershell_test.ps1
       - run: echo "🍏 This job's status is ${{ job.status }}."
