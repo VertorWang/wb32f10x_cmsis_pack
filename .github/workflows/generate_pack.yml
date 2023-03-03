@@ -3,10 +3,9 @@ run-name: ${{ github.actor }} is testing generate pack 🚀
 on: [push]
 jobs:
   GitHub-Generate-Pack:
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
     steps:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - name: Perform a Pester test from the command-line
-        shell: pwsh
-        run: powershell_test.ps1
+      - run: ls
       - run: echo "🍏 This job's status is ${{ job.status }}."
