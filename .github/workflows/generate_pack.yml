@@ -2,7 +2,7 @@ name: GitHub CI/CI Generate pack
 run-name: ${{ github.actor }} is testing generate pack 🚀
 on: [push]
 jobs:
-  GitHub-Generate-Pack
+  GitHub-Generate-Pack:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
