@@ -7,5 +7,7 @@ jobs:
     steps:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - name: Perform a Pester test from the command-line
+        run: ls
+      - run: Set-Location .\WestBerry.WB32F10x_DFP
       - run: ls
       - run: echo "🍏 This job's status is ${{ job.status }}."
