@@ -10,10 +10,10 @@ jobs:
         uses: actions/checkout@v3
       - run: ./pack_generate.ps1
       - run: ls
-      - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Upload test results
         uses: actions/upload-artifact@v3
         with:
           name: WestBerry.WB32F10x_DFP.PACK
           path: ./WestBerry.WB32F10x_DFP.0.1.0.pack
+      - run: echo "🍏 This job's status is ${{ job.status }}."
     if: ${{ always() }}
